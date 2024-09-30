@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+html { scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #020d16, #06bcf3,rgb(1, 1, 26) );
+    color: #0c0404ea;
+}
+
+/* Estilos para o cabeçalho e menu */
+header {
+    text-align: center;
+    background-color: #1c83ebe7; /* Azul escuro */
+    color: #f2f3faee;
+    padding: 150px;
+    z-index: -10px;
+    top: 0x;
+    position: sticky;
+}
+
+.RodapeInicial { 
+    width: 300px; 
+    /* size: adjust 40px; */
+    border-width: 40px;
+    box-shadow: 40px;
+    padding: 30px;
+    border-left: #eef5f7;
+    border-radius: 40px;
+}
+.links{ 
+    font-size: 20px;
+    color: blueviolet( 93, 0, 255);
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff; /* Branco */
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #a72a6ec4; /* Azul claro */
+}
+
+/* Estilos das seções */
+section {
+    padding: 20px;
+    background-color: #f5f4fa17;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    list-style: none;
+}
+
+h2 {
+    color: #020e1a; /* Azul esc*/
+}
+ul{ 
+    color: rgb(12, 2, 2) ;
+
+    list-style: none;
+    text-align: left;
+}
+.Artigos {
+    color: rgb(214, 216, 226) !important;
+}
+
+  .SOBRE-A-EMPRESA{ 
+color: #f3f6f7; !important;
+  }
+
+  .contato{  /*RODAPÉ FINAL*/
+    color: rgb(224, 224, 233) !important; 
+    text-align: center;  !important;
+}
+.home { 
+    padding: 20px;
+    border-width: 20cap;
+    border-radius: 20px;
+    color: #3d14f1;
+    text-size-adjust: blue  20px;
+    text-shadow: black, white;
+}
