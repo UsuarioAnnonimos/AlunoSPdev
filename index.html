@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Fit</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Estilos para o cabeçalho e menu */
+        header {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            /*Texto home,Sobre[..]*/
+            text-decoration: none;
+            color: #3b83f0e3;
+        }
+
+        .menu a:hover {
+            color: #e5edf8;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        /* Remove sublinhado dos links na seção HOME */
+        #HOME  {
+            text-decoration: none;
+            /* Remove o sublinhado */
+            color: inherit;
+            /* Mantém a cor padrão do texto */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+       
+        <h2 class="titulo">
+            <div class="celular"> <i class="fa-solid fa-bars"></i>  </div> 
+            <i class="fa-solid fa-dumbbell" style="color: #04010e;">  </i>
+             GETFIT </h2>
+    </header>
+    <nav class="menu">
+
+        <ul class="opcoes">
+            <li> <i class="fa-solid fa-house" style="color: hsl(195, 22%, 96%);"> </i> <a href="#HOME">HOME</a> </i>
+            </li>
+            <li> <i class="fa-solid fa-users-between-lines" style="color: #f3f5f8;"></i> <a
+                    href="#SERVIÇOS">SERVIÇOS</a></li>
+            <li> <i class="fa-solid fa-headset" style="color: #ebeff5;"></i> <a href="#FALE-CONOSCO">FALE CONOSCO</a>
+            </li>
+            <li> <i class="fa-solid fa-building" style="color: #f6f9fa;"> </i> <a href="#SOBRE-A-EMPRESA">SOBRE A
+                    EMPRESA</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+
+    <section> <!-- Cabeçalho academia -->
+        <h3>Conheça nossas instalações que oferecem estacionamento seguro para o seu veículo,vestiários completos,
+            limpos e privativos.
+            Além de equipamentos modernos e instrutores altamente capacitados prontos para melhor te atender. </h3>
+        <img class="RodapeInicial" src="Imagens/Instrutores (2).png" alt="Instrutores">
+
+        <img class="RodapeInicial" src="Imagens/academia.png" alt="Instrutores">
+
+        <img class="RodapeInicial" src="Imagens/predio externo.png" alt="Espaço">
+
+        <img class="RodapeInicial" src="Imagens/vestiario.png" alt="Espaço">
+
+    </section>
+
+    <section id="home">
+        <h1>Você pode se interessar:</h1>
+        <article>
+            <ul>
+                <li>
+                    <h2>
+                        <a class="Artigos"
+                            href="https://nutrium.com/blog/pt-br/como-a-vitamina-d-pode-melhorar-a-performance-no-atleta/"
+                            target="_blank">
+                            Você sabia que uma vitamina poderosa pode estar faltando na sua dieta e sabotando seus
+                            treinos?
+                        </a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a class="Artigos"
+                            href="https://oglobo.globo.com/saude/noticia/2024/05/14/bomba-de-proteinas-a-semente-que-aumenta-a-massa-muscular.ghtml"
+                            target="_blank">
+                            Elixir do Crescimento: O Segredo Natural para Aumentar sua Massa Muscular!
+                        </a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a class="Artigos"
+                            href="https://totalpass.com/br/blog/atividade-fisica/boxe-conheca-os-beneficios/"
+                            target="_blank">
+                            Cansado de Puxar Ferro? Pratique Essa Arte Marcial para Ganhar Força e Definir Seu Corpo!
+                        </a>
+                    </h2>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="SERVIÇOS">
+        <h2>Nossos serviços oferecidos:</h2>
+        <ul>
+            <li>
+                <h3>Consultoria Nutricional:</h3>
+                <p>Oferecemos orientações personalizadas para atender às suas necessidades e objetivos de saúde.</p>
+            </li>
+            <li>
+                <h3>GetFit Tour Conect+:</h3>
+                <p>Nossos workshops presenciais têm como objetivo conscientizar a comunidade sobre saúde e nutrição.</p>
+            </li>
+            <li>
+                <h3>Fit Pass (Mensal/Semestral/Anual):</h3>
+                <p>Ao adquirir um plano GetFit, você recebe treinos personalizados e acompanhamento constante.</p>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="FALE-CONOSCO">
+        <h2>Deseja falar conosco?</h2>
+        <form action="/submit" method="POST">
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="SOBRE-A-EMPRESA">
+        <h2>Conheça mais sobre nós:</h2>
+        <p>Fundada em julho de 2014, somos uma empresa de consultoria fitness e nutricional com sede esportiva em
+            Farroupilha, RS. Com mais de uma década de experiência no mercado nacional, já impactamos a vida de mais de
+            12.000 alunos, ajudando-os a transformar sua saúde e bem-estar por meio de programas de treinos
+            personalizados e acompanhamento especializado.
+
+            Nosso compromisso é guiar nossos clientes em suas jornadas, proporcionando resultados visíveis e
+            sustentáveis. </p>
+        <p> Transforme-se na sua melhor versão com a equipe GetFit ao seu lado!</p>
+    </section>
+
+    <div class="mapa">
+
+
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345097654!2d144.9537353153164!3d-37.81627997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11e69f%3A0x5045675218ceed30!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1632050123456!5m2!1sen!2sau"
+            width="700" height="350" style="border:60px; text-align: center;" allowfullscreen="20px" loading="lazy">
+        </iframe>
+    </div>
+
+    <footer class="contato">
+        <h2>Contato:</h2>
+        <p>Email: contatoprofissional@getfit.com</p>
+        <p>© 2024 GETFIT. Todos os direitos reservados.</p>
+        <div class="rodape">
+            <p>Desenvolvido por:UsuarioAnnonimos.</p>
+            <p> web-email: <i class="fa-brands fa-linkedin" style="color: #1111eee1;"> </i>
+                <i class="fa-brands fa-telegram" style="color: #4752f7;"></i>
+                <i class="fa-brands fa-x-twitter" style="color: #f5f2f2;"></i>
+                <i class="fa-brands fa-square-instagram" style="color: #f55696;"></i>
+            </p>
+
+        </div>
+    </footer>
+
+      <script src="script.js"> </script>
+</body>
+</html>
